@@ -1,0 +1,319 @@
+/** General Styles ------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font: 1.125em 'Open Sans', sans-serif;
+  color: #62717e;
+}
+
+.clearfix:after {
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+a {
+  color: #2572aa;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 40px 0;
+}
+
+h3 {
+  margin: 15px 0;
+}
+
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+/** Layout Styles ------------------------------*/
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#profile,
+aside {
+  background-color: rgba(54, 172, 208, 0.2);
+  padding: 30px 0;
+}
+
+.inln {
+  display: inline;
+}
+
+.inlnb {
+  display: inline-block;
+}
+
+/** Navigational Styles ------------------------*/
+
+nav {
+  color: #2572aa;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  box-shadow: 0px 2px rgba(231, 231, 231, 0.5);
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+.logo{
+  padding: 0px 0px 5px;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.navi {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navi li {
+  margin: 5px 0;
+  background: #ededed;
+  border: 1px solid #ccc;
+}
+
+footer .navi {
+  display: none;
+  font-size: 0.9em;
+}
+
+footer .navi li {
+  margin: 7px 0;
+}
+
+/** Profile Section ---------------------------*/
+
+.profile-pic {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(54, 172, 208, 0.2);
+}
+
+.profile-pic img {
+  width: 40%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.profile-section {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/** Portfolio Cards ----------------------------*/
+
+.portfolio-cards {
+  margin-bottom: 40px;
+}
+
+.portfolio-cards img {
+   box-shadow: 0px 0px 8px 1px rgba(102, 102, 102, 0.8);
+}
+
+.portfolio-cards img:hover {
+   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+/** Skills Section -----------------------------*/
+
+#skills {
+    margin-bottom: 40px;
+}
+
+.skills-card {
+  margin: 0 15px;
+}
+
+.font-awe {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.skills-card:nth-child(2n+1) .font-awe {
+  padding: 10px;
+}
+
+.skills-card:hover .font-awe {
+  background-color: #62717e;
+  color: #fff;
+}
+
+/** Aside section ------------------------------*/
+
+aside h2 {
+  margin: 0px 0 20px 0;
+}
+
+.contact-info {
+  margin: 20px 0 15px 0;;
+}
+
+.contact-info span {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+/** Footer Cards -------------------------------*/
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+.footer-logo {
+  color: #2572aa;
+}
+
+
+/** Media Queries ------------------------------*/
+
+@media screen and (min-width: 767px) {
+
+  /** General Styles ------------------------------*/
+  .container {
+    max-width: 1200px;
+  }
+
+  .floattl {
+    float:left;
+    width: 50%;
+  }
+
+  .floattr {
+    float: right;
+    width: 50%;
+  }
+
+  /** Navigational Styles ------------------------*/
+
+  nav .container {
+    text-align: center;
+  }
+
+  .navi {
+    display: inline-block;
+  }
+
+  .navi li {
+    float: left;
+    border: none;
+    background: none;
+  }
+
+  .navi a {
+    padding: 15px 10px 10px;
+    margin: 0 5px;
+    border-bottom: 2px solid #fff;
+  }
+
+  .navi a:hover {
+    background: none;
+    color: #2572aa;
+    border-bottom: 2px solid;
+  }
+
+  /** Profile Section ---------------------------*/
+
+  .profile-copy {
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  /** Portfolio Cards ----------------------------*/
+
+  .portfolio-cards {
+  }
+
+  .portfolio-cards:nth-child(2n+0) {
+    padding-right: 1%;
+    clear: left;
+  }
+
+  .portfolio-cards:nth-child(2n+1) {
+    padding-left: 1%;
+  }
+
+  /** Footer Cards -------------------------------*/
+
+  .btt {
+    display: none;
+  }
+
+  .footer-logo {
+    margin: 5px 0;
+  }
+
+  footer .navi {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (min-width: 1023px) {
+
+  /** Navigational Styles ------------------------*/
+
+  .logo {
+    float: left;
+  }
+
+  .navi {
+    float: right;
+  }
+
+
+  /** Portfolio Cards ----------------------------*/
+  main .floattl {
+    width: 33.33%
+  }
+
+  .portfolio-cards:nth-child(1n+0) {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .portfolio-cards:nth-child(2n+0) {
+    clear: none;
+  }
+
+  .portfolio-cards:nth-child(3n+2) {
+    clear:left;
+  }
+
+}
