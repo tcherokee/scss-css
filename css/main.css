@@ -620,5 +620,8 @@ footer .navi {
   @media screen and (min-width: 47.9375em) {
     footer .navi {
       display: inline-block; } }
+@media screen and (min-width: 47.9375em) {
+  footer .btt {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

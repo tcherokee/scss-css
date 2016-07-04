@@ -150,15 +150,23 @@ nav {
 
 /* Footer Navigation */
 
-footer .navi {
-  display: none;
-  font-size: 0.9em;
+footer {
+  .navi {
+    display: none;
+    font-size: 0.9em;
 
-  li {
-    margin: 7px 0;
+      li {
+        margin: 7px 0;
+      }
+
+      @include brkpnt(tablet) {
+        display: inline-block;
+    }
   }
 
-  @include brkpnt(tablet) {
-    display: inline-block;
+  .btt {
+    @include brkpnt(tablet) {
+      display: none;
+    }
   }
 }
