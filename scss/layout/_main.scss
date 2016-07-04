@@ -1,0 +1,95 @@
+.container {
+  @extend %centered;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+aside {
+  @extend %colord-container;
+
+  h2 {
+    margin: 0px 0 20px 0;
+  }
+
+  .contact-info {
+    margin: 20px 0 15px 0;
+
+    span {
+      @extend %inlnb;
+      font-weight: 600;
+      margin-left: 15px;
+    }
+  }
+}
+
+/** Profile Section ---------------------------*/
+
+#profile {
+
+  @extend %colord-container;
+
+  .profile-section {
+
+    max-width: em(1024);
+    margin: 0 auto;
+
+    .profile-pic {
+      @extend %centered;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: darken($background-secondary, 8%);
+
+      img {
+        width: 40%;
+        border: 5px solid $white;
+        border-radius: 50%;
+      }
+
+    }
+
+    .profile-copy {
+      @include brkpnt(tablet) {
+        padding-right: 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/** Skills Section -----------------------------*/
+
+main {
+
+  #skills {
+      margin-bottom: 40px;
+
+      .skills-card {
+        @extend %inlnb;
+        margin: 0 15px;
+
+        .font-awe {
+          @extend %inlnb;
+          border: 1px solid;
+          border-radius: 50%;
+          padding: 10px 15px;
+          margin-bottom: 15px;
+        }
+
+        &:nth-child(2n+1) .font-awe {
+          padding: 10px;
+        }
+
+        &:hover .font-awe {
+          background-color: $background-tetiary;
+          color: $text-color-light;
+        }
+      }
+  }
+
+  .floattl {
+    @include brkpnt(desktop) {
+      width: 33.33%
+    }
+  }
+
+}

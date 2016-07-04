@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font: 1.125em $stack-open-sans;
+  color: $text-color-default;
+}
+
+.clearfix:after {
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+a {
+  color: $anchor-color-default;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 40px 0;
+}
+
+h3 {
+  margin: 15px 0;
+}
+
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+
+/** Media Queries ------------------------------*/
+
+@include brkpnt(tablet) {
+
+  /** General Styles ------------------------------*/
+  .container {
+    max-width: 1200px;
+  }
+
+  .floattl {
+    float:left;
+    width: 50%;
+  }
+
+  .floattr {
+    float: right;
+    width: 50%;
+  }
+}

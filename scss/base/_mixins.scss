@@ -1,0 +1,23 @@
+@mixin box-shadow-opacity($horizontal, $vertical, $blur, $spread, $color, $opacity) {
+  box-shadow: #{$horizontal}px #{$vertical}px #{$blur}px #{$spread}px rgba($color, $opacity);
+}
+
+@mixin brkpnt($device) {
+  @if $device == phone {
+    @media #{$brk-point-small} {
+      @content;
+    }
+  }
+
+  @else if $device == tablet {
+    @media #{$brk-point-medium} {
+      @content;
+    }
+  }
+
+  @else if $device == desktop {
+    @media #{$brk-point-large} {
+      @content;
+    }
+  }
+}

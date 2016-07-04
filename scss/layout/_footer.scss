@@ -1,0 +1,20 @@
+/* Footer */
+footer {
+  border-top: 1px solid $border-color;
+  padding: 20px 0;
+  font-weight: 700;
+
+  &-logo {
+    color: $anchor-color-default;
+
+    @include brkpnt(tablet) {
+      margin: 5px 0;
+    }
+  }
+
+  @include brkpnt(desktop) {
+    .btt {
+      display: none;
+    }
+  }
+}

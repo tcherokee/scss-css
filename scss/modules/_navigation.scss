@@ -1,0 +1,164 @@
+/* Menu navigation */
+nav {
+  @include box-shadow-opacity(0, 2, 0, 0, $shadow-color-light, 0.5);
+  color: $text-color-nav;
+  border-bottom: 1px solid $border-color;
+  padding: 15px 0;
+
+  .container {
+    position: relative;
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    background: $anchor-bkg;
+
+    &:hover {
+      background: $anchor-bkg-hover;
+      color: $text-color-light;
+    }
+  }
+
+  @include brkpnt(tablet) {
+    & .container {
+      text-align: center;
+    }
+
+    a {
+      background: $anchor-bkg-none;
+      border-bottom: 2px solid $white;
+    }
+  }
+
+  .logo{
+    padding: 0px 0px 5px;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 10px 0;
+
+    @include brkpnt(desktop) {
+      float: left;
+    }
+  }
+
+  .mobile-nav-btn {
+
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+
+    span {
+      display: block;
+      position: relative;
+      margin: 5px 0;
+      width: 25px;
+      height: 2px;
+      background-color: $text-color-nav;
+
+
+        &:first-child {
+          @extend %position;
+          transform: rotate(0deg);
+        }
+
+        &:nth-child(0n+2) {
+          @extend %transition;
+          background: inital;
+        }
+
+        &:last-child {
+          @extend %position;
+          transform: rotate(0deg);
+        }
+    }
+
+    &.open {
+      span {
+        &:first-child {
+          @extend %transition;
+          transform: rotate(45deg);
+          top: 7px;
+        }
+
+        &:nth-child(0n+2) {
+          @extend %transition;
+          background: transparent;
+        }
+
+        &:last-child {
+          @extend %transition;
+          transform: rotate(-45deg);
+          top: -7px;
+        }
+      }
+    }
+
+    @include brkpnt(tablet) {
+      display: none;
+    };
+  }
+
+}
+
+
+
+.navi {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+
+  li {
+    margin: 5px 0;
+    border: 1px solid $border-color;
+
+    @include brkpnt(tablet) {
+      float: left;
+      border: none;
+      background: none;
+    }
+  }
+
+  @include brkpnt(tablet) {
+    display: inline-block !important;
+
+    & a {
+      padding: 15px 10px 10px;
+      margin: 0 5px;
+
+      &:hover {
+        background: none;
+        color: #2572aa;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+
+  @include brkpnt(desktop) {
+    float: right;
+  }
+}
+
+/* Mobile Menu */
+
+
+
+
+/* Footer Navigation */
+
+footer .navi {
+  display: none;
+  font-size: 0.9em;
+
+  li {
+    margin: 7px 0;
+  }
+
+  @include brkpnt(tablet) {
+    display: inline-block;
+  }
+}

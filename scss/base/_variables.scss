@@ -1,0 +1,46 @@
+/* Descriptive Color Variables */
+
+$white: #ffffff;
+$black: #000000;
+
+$blue-grey: #62717e;
+$blue: #2572aa;
+
+$light-grey: #cccccc;
+$medium-grey: #ededed;
+$dark-grey: #666666;
+
+
+
+/* Functional Color Variable */
+$background-primary: $white;
+$background-secondary: lighten($blue, 50%);
+$background-tetiary: $blue-grey;
+
+$text-color-default: $blue-grey;
+$text-color-nav: $blue;
+$text-color-light: $white;
+
+$anchor-color-default: $blue;
+$anchor-bkg-none: transparent;
+$anchor-bkg: $medium-grey;
+$anchor-bkg-hover: $light-grey;
+
+$border-color: $light-grey;
+
+$shadow-color-light: $medium-grey;
+$shadow-color-dark:  $dark-grey;
+$shadow-color-black: $black;
+
+
+/* Font Stacks */
+$stack-sans-serif: Helvetica, Arial, sans-serif;
+$stack-open-sans: 'Open-Sans', $stack-sans-serif;
+
+/* Default Font Size */
+$font-size: 16;
+
+/* Breakpoints */
+$brk-point-small:   'screen and (min-width: ' + em(320) + ')';
+$brk-point-medium:  'screen and (min-width: '+ em(767) + ')';
+$brk-point-large:   'screen and (min-width: ' + em(1023) + ')';

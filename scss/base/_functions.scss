@@ -1,0 +1,8 @@
+/* Set Opacity based on Hex Value and Opacity Value */
+@function set-opacity($color, $visibility) {
+  @return rgba($color, $visibility);
+}
+
+@function em($target, $context: 16) {
+  @return ($target/$context) * 1em;
+}
