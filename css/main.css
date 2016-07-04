@@ -399,7 +399,7 @@ img {
   max-width: 100%; }
 
 body {
-  font: 1.125em "Open-Sans", Helvetica, Arial, sans-serif;
+  font: 1.125em "Open Sans", Helvetica, Arial, sans-serif;
   color: #62717e; }
 
 .clearfix:after {
@@ -568,7 +568,7 @@ nav {
       nav .mobile-nav-btn span:first-child {
         transform: rotate(0deg); }
       nav .mobile-nav-btn span:nth-child(0n+2) {
-        background: inital; }
+        background: initial; }
       nav .mobile-nav-btn span:last-child {
         transform: rotate(0deg); }
     nav .mobile-nav-btn.open span:first-child {
@@ -620,5 +620,8 @@ footer .navi {
   @media screen and (min-width: 47.9375em) {
     footer .navi {
       display: inline-block; } }
+@media screen and (min-width: 47.9375em) {
+  footer .btt {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
