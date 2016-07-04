@@ -568,7 +568,7 @@ nav {
       nav .mobile-nav-btn span:first-child {
         transform: rotate(0deg); }
       nav .mobile-nav-btn span:nth-child(0n+2) {
-        background-color: inital; }
+        background: initial; }
       nav .mobile-nav-btn span:last-child {
         transform: rotate(0deg); }
     nav .mobile-nav-btn.open span:first-child {
