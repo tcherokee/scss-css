@@ -67,7 +67,7 @@ nav {
 
         &:nth-child(0n+2) {
           @extend %transition;
-          background: initial;
+          background: $text-color-nav;
         }
 
         &:last-child {
